@@ -17,6 +17,7 @@
 } */
 
 body {
+  height: 100vh;
   color: rgb(var(--foreground-rgb));
   margin: 0;
   background: linear-gradient(
@@ -25,4 +26,16 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  display: flex;
+  flex-direction: column;
+  main {
+    flex: 1;
+    overflow: auto;
+  }
+}
+
+.float-button {
+  position: absolute !important;
+  right: 12px;
+  bottom: 84px;
 }

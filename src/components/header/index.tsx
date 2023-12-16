@@ -33,22 +33,30 @@ const Header = () => {
     setOpen((prev) => !prev);
   };
 
-  useEffect(() => {
-    if (pathname.toString().replace('/', '') === currentKey) {
-        return
+  const onClickLogo = () => {
+    if (pathname.toString().replace("/", "") === "feedback") {
+      sessionStorage.clear();
+      router.push("/");
+      return;
     }
-    setCurrentKey(pathname.toString().replace('/', ''));
-  }, [pathname])
+  };
+
+  useEffect(() => {
+    if (pathname.toString().replace("/", "") === currentKey) {
+      return;
+    }
+    setCurrentKey(pathname.toString().replace("/", ""));
+  }, [pathname]);
   return (
     <div className={style.headerContainer}>
-      <Button
+      {/* <Button
         className={style.menuIcon}
         icon={<MenuOutlined />}
         type="text"
         onClick={clickMenuIcon}
-      />
-      <Image src={logo} height={36} alt="logo" />
-      <Drawer
+      /> */}
+      <Image src={logo} height={36} alt="logo" onClick={onClickLogo} />
+      {/* <Drawer
         className={style.drawerContainer}
         placement="left"
         width={180}
@@ -57,7 +65,7 @@ const Header = () => {
         closable={false}
       >
         <Navigation onChangeRoute={onChangeRoute} currentKey={currentKey} />
-      </Drawer>
+      </Drawer> */}
     </div>
   );
 };

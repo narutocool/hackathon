@@ -1,0 +1,52 @@
+.homepageContainer {
+    padding: 12px 24px;
+    /* text-align: center; */
+}
+
+.homepageContainer > img {
+    width: 100%;
+    height: auto;
+}
+
+.findInfoForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput__email {
+    margin-top: 12px !important;
+}
+
+.errorText {
+    margin-top: 4px;
+    font-size: 10px;
+    color: red;
+    text-align: start;
+}
+
+.btn {
+    margin-top: 12px;
+    display: flex !important;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: fit-content;
+}
+
+.contentUs {
+
+}
+
+.contactUsContent {
+    border-radius: 12px;
+    padding: 24px 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactRow {
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

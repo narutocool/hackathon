@@ -1,0 +1,13 @@
+.bottomNavigation {
+    height: 64px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1px;
+    border-top: 1px solid rgb(192, 192, 192);
+    border-radius: 12px;
+}
+
+.bottomNavigation > :not(:last-child) {
+    border-right: 1px solid rgb(192, 192, 192);
+}
