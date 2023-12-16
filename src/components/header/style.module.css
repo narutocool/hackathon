@@ -1,0 +1,16 @@
+.headerContainer {
+    background-color: #1E50C0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menuIcon {
+    color: white !important;
+    position: absolute !important;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
