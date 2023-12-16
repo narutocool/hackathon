@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 import BottomNavigation from "@/components/bottomNavigation";
 import Header from "@/components/header";

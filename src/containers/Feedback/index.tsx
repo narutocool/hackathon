@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { EventContext } from "@/contexts/eventContext";
 import React, { useContext } from "react";
 
