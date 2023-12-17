@@ -1,0 +1,26 @@
+.contactContainer {
+    padding: 12px 24px;
+    /* text-align: center; */
+}
+
+.contactContainer > img {
+    width: 100%;
+    height: auto;
+}
+
+.contactUs {
+    margin-top: 12px;
+}
+
+.contactUsContent {
+    border-radius: 12px;
+    padding: 24px 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactRow {
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

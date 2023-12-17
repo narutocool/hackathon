@@ -5,7 +5,6 @@ import { useContext } from 'react';
 
 export default function Feedback() {
   const { event } = useContext(EventContext)
-  console.log(event)
   return (
     <FeedbackContainer />
   )

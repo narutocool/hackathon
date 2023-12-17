@@ -1,0 +1,42 @@
+.eventTitleContainer{
+    background-color: #F6F6F6;
+    padding: 12px;
+    border-radius: 20px;
+    text-align: center;
+    width: 140px;
+}
+
+.eventInfo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.content {
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.timeAgendaContainer {
+    padding: 12px 24px;
+}
+
+.timeLineContainer {
+    padding-left: 36px;
+    padding-top: 36px;
+}
+
+.eventNodeTitle{
+    line-height: 0.8;
+    font-weight: bold;
+
+}
+
+.eventNodeLocation{
+    line-height: 0.5;
+
+}
+
+.eventNodeDate{
+    line-height: 0.5;
+}

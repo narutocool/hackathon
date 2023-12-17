@@ -1,0 +1,17 @@
+.my-btn>.ant-btn-icon {
+    margin-inline-end: 0 !important;
+}
+
+.ant-tabs {
+    display: flex;
+
+    .ant-tabs-nav-wrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+}
+
+.ant-tabs-nav::before {
+    display: none;
+}

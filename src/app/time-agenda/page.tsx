@@ -1,10 +1,8 @@
 'use client'
-import Image from 'next/image'
+import TimeAgenda from '@/containers/TimeAgenda'
 
 export default function Home() {
   return (
-    <div>
-        <div>Time agenda</div>
-    </div>
+    <TimeAgenda />
   )
 }

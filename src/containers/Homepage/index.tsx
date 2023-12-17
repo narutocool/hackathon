@@ -31,19 +31,27 @@ const Homepage = () => {
       setState({ ...state, error: "Please input email" });
       return;
     }
+
+    const targetData = DUMMY_DATA.find(item => item.eventCode === state.eventcode);
+
+    if (!targetData) {
+      setState({ ...state, error: "Event not found" });
+      return;
+    }
+
     sessionStorage.setItem(
       "allData",
       JSON.stringify({
         eventcode: state.eventcode,
         guestemail: state.email,
-        findData: DUMMY_DATA[0],
+        findData: targetData,
       })
     );
     router.push("/event-detail");
   };
   return (
     <div className={style.homepageContainer}>
-      <h3>Welcome to CLV</h3>
+      <h2>Welcome to CLV</h2>
       <Image src={banner} alt="banner" />
       <div className={style.findInfoForm}>
         <h4>Input information to find your event:</h4>

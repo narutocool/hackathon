@@ -1,4 +1,96 @@
-.eventDetailContainer {
+.layout {
+    padding: 12px 24px;
+}
+
+.eventOverview {
     display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.eventTitleContainer{
+    background-color: #F6F6F6;
     padding: 12px;
+    border-radius: 20px;
+    text-align: center;
+    width: 140px;
+}
+
+.eventInfo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventDescription {
+    padding: 12px 0;
+}
+
+.eventTime {
+    padding: 12px;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+}
+
+.eventStatus {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    gap: 20px;
+}
+
+.moreInfo {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.eventProgress {
+    margin-bottom: 12px;
+}
+
+.btn {
+    align-self: flex-end;
+}
+
+.layout > img {
+    margin-top: 12px;
+    width: 100%;
+    height: auto;
+}
+
+.eventDescriptionInfo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.eventDescriptionContent {
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.timelineTitle {
+    font-family: Inter;
+    font-weight: 700;
+    text-align: left;
+
+}
+
+.cardDesc {
+    max-width:120px; /* or whatever width you want. */
+    display: inline-block;
+    width: 120px;
+    height: 110px;
+    background: #F6F6F6;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cardDesc .content p{
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 300;
+    text-align: center;
 }

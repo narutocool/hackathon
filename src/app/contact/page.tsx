@@ -1,10 +1,9 @@
 'use client'
-import Image from 'next/image'
+
+import ContactContainer from "@/containers/Contact"
 
 export default function Contact() {
   return (
-    <div>
-        <div>Time agenda</div>
-    </div>
+    <ContactContainer />
   )
 }

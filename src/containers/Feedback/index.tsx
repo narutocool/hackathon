@@ -26,7 +26,7 @@ const FeedbackContainer = () => {
           </div>
           <div className={style.eventTime}>{event?.eventLocation}</div>
         </div>
-        <h2>The event has been finished</h2>
+        <h3>The event has been finished</h3>
         <p>You can review the event milestone below:</p>
         {event?.eventRecap?.length &&
           event.eventRecap.map((item, index) => {
@@ -39,13 +39,13 @@ const FeedbackContainer = () => {
           })}
       </div>
       <div className={style.feedbackZone}>
-        <h2>You can send a feedback by hitting the button below</h2>
+        <h3>You can send a feedback by hitting the button below</h3>
         <Button type="primary" style={{ background: "black" }} size="large">
           Send Feedback
         </Button>
       </div>
       <div className={style.feedbackZone}>
-        <h2>Or back to home</h2>
+        <h3>Or back to home</h3>
         <Button type="primary" style={{ background: "black" }} size="large" onClick={onClickLogo}>
           Back to home
         </Button>
