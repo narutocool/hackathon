@@ -24,7 +24,7 @@ const QRComponent = (props: any) => {
     >
       <Flex justify="center">
         <Space direction="vertical" align="center">
-          <QRCode size={400} value={jsonData || "-"} bgColor="white" />
+          <QRCode size={340} value={jsonData || "-"} bgColor="white" />
         </Space>
       </Flex>
     </div>

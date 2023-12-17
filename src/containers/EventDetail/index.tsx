@@ -77,7 +77,7 @@ const EventDetail = () => {
   const items: TabsProps["items"] = [
     {
       key: "1",
-      label: "Check-in-code",
+      label: "Check-in Code",
       children: <QRComponent event={event} />,
       icon: <QrcodeOutlined />,
     },
@@ -104,7 +104,7 @@ const EventDetail = () => {
       let countdown =
         rtnObj.days + "d " + rtnObj.hours + "h " + rtnObj.minutes + "m ";
       setState({
-        status: "Start In",
+        status: "Start in",
         time: countdown,
         color: "#FFE600",
         buttonText: "See Timeline",
@@ -152,6 +152,7 @@ const EventDetail = () => {
           </div>
           <div className={style.eventTime}>{event?.eventLocation || "--"}</div>
           <Button
+            className="my-btn"
             onClick={showModal}
             icon={<QrcodeOutlined />}
             style={{ background: "black", color: "white" }}

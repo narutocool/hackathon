@@ -2,17 +2,15 @@
 "use client";
 import BottomNavigation from "@/components/bottomNavigation";
 import Header from "@/components/header";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import StyledComponentsRegistry from "../../lib/AntdRegistry";
-import "./globals.css";
-import ProtectedComponent from "@/components/protectedComponent";
-import { Button, FloatButton } from "antd";
+import { EventContext } from "@/contexts/eventContext";
 import { QuestionCircleOutlined } from "@ant-design/icons";
+import { Button } from "antd";
+import { Inter } from "next/font/google";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { DUMMY_DATA } from "../../dummyData";
-import { EventContext } from "@/contexts/eventContext";
+import StyledComponentsRegistry from "../../lib/AntdRegistry";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,7 +55,7 @@ export default function RootLayout({
     } else {
       // if expired --> go to feedback page
       // else the code below
-      const findData = DUMMY_DATA[0];
+      const findData = DUMMY_DATA.find(event => event.eventCode === queries.get("eventcode"));
       sessionStorage.setItem(
         "allData",
         JSON.stringify({
@@ -79,13 +77,13 @@ export default function RootLayout({
       >
         <body className={inter.className}>
           <StyledComponentsRegistry>
-            {/* <ProtectedComponent /> */}
             <Header />
             <main>{children}</main>
             {isShowNavigation ? (
               <>
                 <Button
                   className="float-button"
+                  type="primary"
                   size="large"
                   shape="circle"
                   icon={<QuestionCircleOutlined />}

@@ -1,0 +1,9 @@
+.faqContainer {
+    padding: 12px 24px;
+}
+
+.faqQuestions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
